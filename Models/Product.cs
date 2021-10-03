@@ -19,6 +19,7 @@ namespace ShopBridge.Models
         public string Description { get; set; }
         
         [Required(ErrorMessage = "Price Field is Required")]
+        [Pricegreaterthan0]
         public decimal Price { get; set; }
 
 
